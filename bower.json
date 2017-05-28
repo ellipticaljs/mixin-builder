@@ -1,0 +1,43 @@
+{
+  "name": "mixin-builder",
+  "version": "1.0.0",
+  "authors": [
+    "S. Francis"
+  ],
+  "description": "ES6 class multiple inheritance mixin",
+  "keywords": [
+    "web-component",
+    "ES6",
+    "standard",
+    "JavaScript",
+    "extend",
+    "mixin",
+    "multiple inheritance"
+  ],
+  "main": "mixin-builder.html",
+  "license": "MIT",
+  "homepage": "https://github.com/ellipticaljs/mixin-builder",
+  "ignore": [
+    "/.*",
+    "/test/",
+    "/demo/",
+    ".gitignore",
+    ".npmignore",
+    "gulpfile.js",
+    "lib",
+    "docs",
+    "index.js",
+    "umd.js",
+    "package.json",
+    "demo",
+    "build.json",
+    "bundle.json",
+    ".nvmrc",
+    ".eslintrc",
+    "bin",
+    "CHANGELOG.md"
+  ],
+  "dependencies": {
+
+  }
+}
