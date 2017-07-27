@@ -1,10 +1,15 @@
 let Mixin = (superclass) => new MixinBuilder(superclass);
 class MixinBuilder {
   constructor(superclass) {
-    this.superclass = superclass;
+    this.superclass = superclass || class {};
   }
 
   with(...mixins) {
-    return mixins.reduce((c, mixin) => mixin(c), this.superclass);
+    return mixins.reduce((c, m) => {
+      if(typeof m !== 'function'){
+        return c;
+      }
+      return m(c);
+    }, this.superclass);
   }
 }
